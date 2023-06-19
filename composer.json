@@ -1,0 +1,37 @@
+{
+    "name": "bulbul5391/laravel-pdf",
+    "description": "Generate PDFs in Laravel with this mPDF wrapper.",
+    "keywords": ["mpdf", "pdf", "laravel"],
+    "license": "MIT",
+    "scripts": {
+        "test": "phpunit --colors=always"
+    },
+    "require": {
+        "php": ">=7.0",
+        "mpdf/mpdf": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "bulbul5391\\LaravelPdf\\": "src/LaravelPdf"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "bulbul5391\\LaravelPdf\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bulbul5391\\LaravelPdf\\PdfServiceProvider"
+            ],
+            "aliases": {
+                "PDF": "bulbul5391\\LaravelPdf\\Facades\\Pdf"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "orchestra/testbench": "^3.7"
+    }
+}
