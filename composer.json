@@ -17,7 +17,6 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "bulbul5391\\LaravelPdf\\Test\\": "tests/"
         }
     },
     "extra": {

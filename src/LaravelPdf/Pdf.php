@@ -57,6 +57,11 @@ class Pdf {
 		$this->mpdf->WriteHTML($html);
 	}
 
+    public function getMpdf()
+    {
+        return $this->mpdf;
+    }
+
 	protected function getConfig($key)
 	{
 		if (isset($this->config[$key])) {

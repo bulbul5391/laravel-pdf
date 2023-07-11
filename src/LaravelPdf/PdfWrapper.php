@@ -28,8 +28,7 @@ class PdfWrapper {
 	{
 		return new Pdf(File::get($file), $config);
 	}
-
-	/**
+ 	/**
 	 * Load a View and convert to HTML
 	 *
 	 * @param string $view
@@ -41,5 +40,4 @@ class PdfWrapper {
 	{
 		return new Pdf(View::make($view, $data, $mergeData)->render(), $config);
 	}
-
 }
